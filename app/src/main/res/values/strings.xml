@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tasty</string>
+    <string name="welcome_to_tasty">Welcome To Tasty</string>
+    <string name="click">Click</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="not_registered_yet_sign_up">Not Registered Yet , Sign Up !</string>
+    <string name="type_your_password">Type Your Password</string>
+    <string name="test">Test</string>
+    <string name="enter">Enter</string>
+</resources>
