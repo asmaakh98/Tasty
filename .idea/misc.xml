@@ -8,6 +8,12 @@
         <entry key="..\:/Downloads/Tasty/app/src/main/res/layout/activity_sign_in.xml" value="0.1" />
         <entry key="..\:/Downloads/Tasty/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="..\:/Downloads/Tasty/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Downloads/Tasty/app/src/main/res/layout/fragment_favorite.xml" value="0.1" />
+        <entry key="..\:/Downloads/Tasty/app/src/main/res/layout/fragment_favorites.xml" value="0.1" />
+        <entry key="..\:/Downloads/Tasty/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Downloads/Tasty/app/src/main/res/layout/fragment_setting.xml" value="0.1" />
+        <entry key="..\:/Downloads/Tasty/app/src/main/res/layout/fragment_settings.xml" value="0.1" />
+        <entry key="..\:/Downloads/Tasty/app/src/main/res/menu/nav_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
