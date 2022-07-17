@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="2dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:id="@+id/imageView2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="135dp"
+            android:contentDescription="@string/recipe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_image_search_24" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="30dp">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="31dp"
+                android:layout_toStartOf="@+id/name"
+                android:text="Name"
+                app:layout_constraintEnd_toStartOf="@+id/name"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="263dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="15dp"
+                android:ems="10"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="31dp"
+                android:layout_toStartOf="@+id/category"
+                android:text="Category"
+                app:layout_constraintEnd_toStartOf="@+id/category"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/category"
+                android:layout_width="270dp"
+                android:layout_height="58dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+
+                android:layout_marginEnd="19dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="30dp">
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="31dp"
+                android:layout_toStartOf="@+id/time"
+                android:text="Time"
+                app:layout_constraintEnd_toStartOf="@+id/time"
+                app:layout_constraintHorizontal_bias="0.528"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="264dp"
+                android:layout_height="62dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="21dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="21dp"
+                android:layout_toStartOf="@+id/ingredients"
+                android:text="Ingredients"
+                app:layout_constraintEnd_toStartOf="@+id/ingredients" />
+
+            <EditText
+                android:id="@+id/ingredients"
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp"
+                android:ems="10"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="70dp">
+
+            <ImageButton
+                android:id="@+id/saveBtn"
+                android:layout_width="78dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="74dp"
+                android:layout_marginBottom="-3dp"
+                android:contentDescription="@string/saveRecipe"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_baseline_save_alt_24" />
+
+            <ImageButton
+                android:id="@+id/cancelBtn"
+                android:layout_width="78dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="232dp"
+                android:layout_marginBottom="0dp"
+                android:contentDescription="@string/cancelAddContact"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/ic_baseline_clear_24" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

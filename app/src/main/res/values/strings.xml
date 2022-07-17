@@ -8,10 +8,22 @@
     <string name="type_your_password">Type Your Password</string>
     <string name="test">Test</string>
     <string name="enter">Enter</string>
-
+    <string name="action_add_dish">Add Dish</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="home">Home</string>
     <string name="favorite">Favorites</string>
     <string name="settings">Settings</string>
+    <string name="saveContact">Save</string>
+    <string name="saveRecipe">Save</string>
+    <string name="cancelAddContact">Cancel</string>
+    <string name="recipe">recipe</string>
+    <string name="addRecipe">TODO</string>
+
+    <string-array name="category">
+        <item>Main</item>
+        <item>Soap</item>
+        <item>Appetizer</item>
+    </string-array>
+
 </resources>

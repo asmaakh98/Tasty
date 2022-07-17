@@ -1,10 +1,11 @@
 package com.example.tasty
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.FrameLayout
-import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.tasty.fragments.FavoritesFragment
 import com.example.tasty.fragments.HomeFragment
 import com.example.tasty.fragments.SettingsFragment
@@ -25,6 +26,9 @@ class MainActivity : AppCompatActivity() {
 
         var bottomnav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         var frame = findViewById<FrameLayout>(R.id.fl_wrapper)
+
+        setupActionBarWithNavController(findNavController(R.id.fragment))
+
 
         homeFragment = HomeFragment()
         supportFragmentManager
@@ -65,5 +69,10 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.fragment)
+        return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }
