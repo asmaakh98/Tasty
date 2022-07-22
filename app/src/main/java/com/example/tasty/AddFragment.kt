@@ -2,6 +2,7 @@ package com.example.tasty
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.LayoutInflater
@@ -13,6 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.tasty.database.Recipe
 import com.example.tasty.database.RecipeViewModel
+import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
 
@@ -20,6 +22,7 @@ import kotlinx.android.synthetic.main.fragment_add.view.*
 class AddFragment : Fragment() {
 
     lateinit var img: String
+
     companion object {
         val IMAGE_REQUEST_CODE = 1_000;
     }

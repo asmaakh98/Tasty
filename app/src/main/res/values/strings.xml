@@ -19,6 +19,7 @@
     <string name="cancelAddContact">Cancel</string>
     <string name="recipe">recipe</string>
     <string name="addRecipe">TODO</string>
+    <string name="edit">Edit</string>
 
     <string-array name="category">
         <item>Main</item>

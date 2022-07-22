@@ -1,13 +1,17 @@
 package com.example.tasty
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+
 import com.example.tasty.database.Recipe
+import com.example.tasty.fragments.HomeFragmentDirections
 import kotlinx.android.synthetic.main.layout_list_item.view.*
 
 
@@ -33,6 +37,21 @@ class HomeAdapter: RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
         val uri: Uri = Uri.parse(currentItem.recipeImg)
         holder.itemView.name.text = currentItem.recipeName
         holder.itemView.recipeImage.load(uri)
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, DetailsActivity::class.java)
+           // holder.itemView.context.startActivity(intent)
+
+            intent.putExtra("img",recipetList[position].recipeImg)
+            intent.putExtra("name", recipetList[position].recipeName)
+            intent.putExtra("category",recipetList[position].category)
+            intent.putExtra("time", recipetList[position].time)
+            intent.putExtra("ingredients", recipetList[position].ingredients)
+            holder.itemView.context.startActivity(intent)
+
+
+        }
+
 
 
     }
