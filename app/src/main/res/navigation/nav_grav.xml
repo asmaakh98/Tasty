@@ -15,9 +15,7 @@
         <action
             android:id="@+id/action_homeFragment_to_addFragment22"
             app:destination="@id/addFragment2" />
-        <action
-            android:id="@+id/action_homeFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+
     </fragment>
 
     <fragment
@@ -27,24 +25,12 @@
          tools:layout="@layout/fragment_favorites" />
      <fragment
          android:id="@+id/settingsFragment"
-         android:name="com.example.tasty.fragments.SettingsFragment"
+         android:name="com.example.tasty.fragments.ProfileFragment"
          android:label="fragment_settings"
-         tools:layout="@layout/fragment_settings" />
+         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/addFragment2"
         android:name="com.example.tasty.AddFragment"
         android:label="AddFragment" />
-    <fragment
-        android:id="@+id/detailsFragment"
-        android:name="com.example.tasty.fragments.DetailsFragment"
-        android:label="fragment_details"
-        tools:layout="@layout/fragment_details" >
-        <action
-            android:id="@+id/action_detailsFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-        <argument
-            android:name="currentRecipe"
-            app:argType="com.example.tasty.database.Recipe" />
-    </fragment>
-    -->
+
 </navigation>

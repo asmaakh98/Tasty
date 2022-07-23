@@ -6,6 +6,6 @@
 
     <item android:title="@string/favorite" android:icon="@drawable/ic_favorite" android:id="@+id/favorite"/>
 
-    <item android:title="@string/settings" android:icon="@drawable/ic_settings" android:id="@+id/settings"/>
+    <item android:title="Profile" android:icon="@drawable/ic_baseline_person_24" android:id="@+id/profile"/>
 
 </menu>

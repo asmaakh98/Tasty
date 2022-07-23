@@ -14,6 +14,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.tasty.AddFragment
 import com.example.tasty.HomeAdapter
 import com.example.tasty.R
@@ -27,6 +28,8 @@ class HomeFragment : Fragment(), OnQueryTextListener {
 
     private lateinit var mRecipeViewModel: RecipeViewModel
     private val adapter = HomeAdapter()
+
+    lateinit var recipeRV: RecyclerView
 
 
 
@@ -48,6 +51,16 @@ class HomeFragment : Fragment(), OnQueryTextListener {
             transaction.replace(R.id.fl_wrapper, addFragment)
             transaction.commit()
         }
+
+         val btProfile = view.findViewById<Button>(R.id.profileButton)
+         btProfile.setOnClickListener {
+            val MyprofileFragment = MyProfileFragment()
+            val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
+            transaction.replace(R.id.fl_wrapper,MyprofileFragment)
+            transaction.commit()
+        }
+
+
         val recyclerView = view.recycleview
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -97,6 +110,8 @@ class HomeFragment : Fragment(), OnQueryTextListener {
 
         })
     }
+
+
 }
 
 

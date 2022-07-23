@@ -8,7 +8,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.tasty.fragments.FavoritesFragment
 import com.example.tasty.fragments.HomeFragment
-import com.example.tasty.fragments.SettingsFragment
+import com.example.tasty.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -17,7 +17,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var bottom_navigation: BottomNavigationView
     lateinit var homeFragment: HomeFragment
     lateinit var favFragment: FavoritesFragment
-    lateinit var settingsFragment: SettingsFragment
+    lateinit var profileFragment: ProfileFragment
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +28,8 @@ class MainActivity : AppCompatActivity() {
 
         var bottomnav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         var frame = findViewById<FrameLayout>(R.id.fl_wrapper)
+
+
 
         setupActionBarWithNavController(findNavController(R.id.fragment))
 
@@ -56,11 +60,11 @@ class MainActivity : AppCompatActivity() {
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                         .commit()
                 }
-                R.id.settings -> {
-                    settingsFragment = SettingsFragment()
+                R.id.profile -> {
+                    profileFragment = ProfileFragment()
                     supportFragmentManager
                         .beginTransaction()
-                        .replace(R.id.fl_wrapper, settingsFragment)
+                        .replace(R.id.fl_wrapper, profileFragment)
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                         .commit()
 

@@ -7,6 +7,19 @@
     android:id="@+id/container"
     tools:context=".MainActivity">
 
+    <!--<TextView
+        android:id="@+id/idTVHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:background="#FFF3B2"
+        android:text="Swipe to Delete and Undo"
+        android:textAlignment="center"
+        android:textColor="@color/yellow_700"
+        android:textSize="18sp"
+        android:textStyle="bold" />-->
 
     <FrameLayout
         android:id="@+id/fl_wrapper"

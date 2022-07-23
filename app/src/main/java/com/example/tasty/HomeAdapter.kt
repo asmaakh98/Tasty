@@ -19,7 +19,9 @@ class HomeAdapter: RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
 
     private var recipetList = ArrayList<Recipe>()
 
-    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {}
+    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         return MyViewHolder(
