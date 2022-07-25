@@ -21,6 +21,9 @@
     <string name="addRecipe">TODO</string>
     <string name="edit">Edit</string>
     <string name="saveProfile">Save</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="skip">Skip</string>
+
 
     <string-array name="category">
         <item>Main</item>

@@ -43,5 +43,11 @@ class SplashScreen : AppCompatActivity() {
             val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
         }
+
+        val btnSkip = findViewById<Button>(R.id.btn_skip)
+        btnSkip.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

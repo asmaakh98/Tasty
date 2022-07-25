@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.tasty.fragments.FavoritesFragment
 import com.example.tasty.fragments.HomeFragment
+import com.example.tasty.fragments.MyRecipesFragment
 import com.example.tasty.fragments.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
 
 
     lateinit var bottom_navigation: BottomNavigationView
+    lateinit var myRecipesFragment: MyRecipesFragment
     lateinit var homeFragment: HomeFragment
-    lateinit var favFragment: FavoritesFragment
     lateinit var profileFragment: ProfileFragment
 
 
@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
         bottomnav.setOnNavigationItemSelectedListener { item ->
             //we will select each menu item and add an event when it's selected
             when (item.itemId) {
+
                 R.id.home -> {
                     homeFragment = HomeFragment()
                     supportFragmentManager
@@ -52,11 +53,11 @@ class MainActivity : AppCompatActivity() {
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                         .commit()
                 }
-                R.id.favorite -> {
-                    favFragment = FavoritesFragment()
+                R.id.my_recipes -> {
+                    myRecipesFragment = MyRecipesFragment()
                     supportFragmentManager
                         .beginTransaction()
-                        .replace(R.id.fl_wrapper, favFragment)
+                        .replace(R.id.fl_wrapper, myRecipesFragment)
                         .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
                         .commit()
                 }

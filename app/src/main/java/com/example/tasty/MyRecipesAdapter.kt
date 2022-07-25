@@ -6,16 +6,14 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 
 import com.example.tasty.database.Recipe
-import com.example.tasty.fragments.HomeFragmentDirections
 import kotlinx.android.synthetic.main.layout_list_item.view.*
 
 
-class HomeAdapter: RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
+class MyRecipesAdapter: RecyclerView.Adapter<MyRecipesAdapter.MyViewHolder>() {
 
     private var recipetList = ArrayList<Recipe>()
 

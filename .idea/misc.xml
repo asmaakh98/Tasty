@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/activity_splash.xml" value="0.6" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/fragment_home.xml" value="0.13125" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/fragment_my_recipes.xml" value="0.25416666666666665" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/notification.xml" value="0.1" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/menu/main_menu.xml" value="0.13020833333333334" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/menu/nav_menu.xml" value="0.13020833333333334" />
         <entry key="..\:/Downloads/FinalApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Downloads/FinalApplication/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Downloads/FinalApplication/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
