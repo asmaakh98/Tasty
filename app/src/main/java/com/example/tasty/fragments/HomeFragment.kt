@@ -1,18 +1,31 @@
 package com.example.tasty.fragments
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentTransaction
+import androidx.recyclerview.widget.RecyclerView
+import androidx.room.Database
 import com.example.tasty.R
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.fragment_home.view.*
+import kotlinx.android.synthetic.main.fragment_my_recipes.view.*
 
 /**
  * A simple [Fragment] subclass.
  */
 class HomeFragment : Fragment() {
 
+    lateinit var recipeRV: RecyclerView
+    lateinit var mDatabase: DatabaseReference
+
+    @SuppressLint("UseRequireInsteadOfGet")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -20,7 +33,20 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         (activity as AppCompatActivity).supportActionBar?.title = "Recipes"
 
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
 
+        val recipeRV = view.recycleviewfav
+        // mDatabase = FirebaseDatabase.getInstance().getReference("Recipes")
+
+        val btProfile = view.findViewById<Button>(R.id.profileButton)
+        btProfile.setOnClickListener {
+            val MyprofileFragment = MyProfileFragment()
+            val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
+            transaction.replace(R.id.fl_wrapper, MyprofileFragment)
+            transaction.commit()
+        }
+        return view
     }
 }
+
+

@@ -50,13 +50,7 @@ class MyRecipesFragment : Fragment(), OnQueryTextListener {
             transaction.commit()
         }
 
-         val btProfile = view.findViewById<Button>(R.id.profileButton)
-         btProfile.setOnClickListener {
-            val MyprofileFragment = MyProfileFragment()
-            val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
-            transaction.replace(R.id.fl_wrapper,MyprofileFragment)
-            transaction.commit()
-        }
+
 
 
         val recyclerView = view.recycleview

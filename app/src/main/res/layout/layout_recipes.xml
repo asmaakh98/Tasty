@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:layout_marginHorizontal="8dp"
+    android:background="@color/yellow_200">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/recipeImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/img_1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="116dp"
+        android:layout_toEndOf="@+id/recipeImage"
+        android:padding="8dp"
+        android:text="Chicken"
+        android:textAlignment="center"
+        android:textColor="#1C255E"
+        android:textSize="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.cardview.widget.CardView>

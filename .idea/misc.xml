@@ -3,11 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/drawable-v24/ic_baseline_person_24.xml" value="0.1" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/drawable-v24/ic_baseline_person_add_24.xml" value="0.1" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/drawable-v24/ic_round_account_circle_24.xml" value="0.1" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/drawable/ic_baseline_image_search_24.xml" value="0.1" />
         <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/activity_notification.xml" value="0.11626139817629179" />
         <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/activity_splash.xml" value="0.6" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/fragment_add.xml" value="0.1" />
         <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/fragment_home.xml" value="0.13125" />
-        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/fragment_my_recipes.xml" value="0.25416666666666665" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/fragment_my_profile.xml" value="0.1" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/fragment_my_recipes.xml" value="0.23722627737226276" />
         <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/layout_list_home.xml" value="0.1037037037037037" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/layout_list_item.xml" value="0.10277777777777777" />
+        <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/layout_recipes.xml" value="0.264" />
         <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/layout/notification.xml" value="0.1" />
         <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/menu/main_menu.xml" value="0.13020833333333334" />
         <entry key="..\:/Downloads/Final Tasty Recipes/app/src/main/res/menu/nav_menu.xml" value="0.13020833333333334" />

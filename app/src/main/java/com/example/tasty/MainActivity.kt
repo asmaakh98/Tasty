@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.tasty.database.Recipe
 import com.example.tasty.fragments.HomeFragment
 import com.example.tasty.fragments.MyRecipesFragment
 import com.example.tasty.fragments.ProfileFragment
