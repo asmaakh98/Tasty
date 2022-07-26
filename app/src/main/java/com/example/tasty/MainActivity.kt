@@ -35,10 +35,10 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(findNavController(R.id.fragment))
 
 
-        homeFragment = HomeFragment()
+        myRecipesFragment = MyRecipesFragment()
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.fl_wrapper, homeFragment)
+            .replace(R.id.fl_wrapper, myRecipesFragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
             .commit()
 

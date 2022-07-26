@@ -10,7 +10,7 @@ import com.example.tasty.R
 
 class MyProfileFragment : Fragment() {
 
-
+    //private val args by args<MyProfileFragmentArgs>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
