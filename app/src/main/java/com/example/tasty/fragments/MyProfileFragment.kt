@@ -5,12 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 import com.example.tasty.R
 
 
 class MyProfileFragment : Fragment() {
 
-    //private val args by args<MyProfileFragmentArgs>()
+    private val args by navArgs<MyProfileFragmentArgs>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

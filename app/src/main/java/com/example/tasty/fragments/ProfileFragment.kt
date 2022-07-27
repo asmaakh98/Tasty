@@ -87,13 +87,13 @@ class ProfileFragment : Fragment() {
     private fun insertInfoToDatabase() {
         val FullName=fullName.text.toString()
         val BirthDate=birthDate.text.toString()
-        val Location=location.text.toString()
+        val Address=address.text.toString()
         val Telephone=telephone.text.toString()
         val Email=email.text.toString()
 
-        if (inputCheck(FullName, BirthDate, Telephone, Location, Email)) {
+        if (inputCheck(FullName, BirthDate, Telephone, Address, Email)) {
 
-            val person= Person(0,FullName, BirthDate, Location, Telephone, Email, imgPr)
+            val person= Person(0,FullName, BirthDate, Address, Telephone, Email, imgPr)
 
             mPersonViewModel.addPerson(person)
             Toast.makeText(requireContext(), "Successfully added!", Toast.LENGTH_LONG).show()
@@ -106,10 +106,10 @@ class ProfileFragment : Fragment() {
         }
     }
 
-    private fun inputCheck(fullName: String, birthDate: String, telephone: String, location: String, email: String): Boolean {
+    private fun inputCheck(fullName: String, birthDate: String, telephone: String, address: String, email: String): Boolean {
 
         return !(TextUtils.isEmpty(fullName) && TextUtils.isEmpty(birthDate) &&
-                TextUtils.isEmpty(telephone) && TextUtils.isEmpty(location) && TextUtils.isEmpty(email))
+                TextUtils.isEmpty(telephone) && TextUtils.isEmpty(address) && TextUtils.isEmpty(email))
 
     }
 

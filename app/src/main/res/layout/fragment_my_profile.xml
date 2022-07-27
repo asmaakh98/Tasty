@@ -82,7 +82,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="1dp"
-                android:inputType="date"
+                android:inputType="text"
                 android:layout_marginEnd="19dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
@@ -117,7 +117,7 @@
                 android:layout_marginTop="1dp"
                 android:layout_marginEnd="21dp"
                 android:ems="10"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -131,11 +131,13 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="wrap_content"
+                android:layout_width="50dp"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
+                android:layout_marginStart="34dp"
                 android:layout_marginTop="22dp"
-                android:layout_marginEnd="41dp"
+                android:layout_marginEnd="46dp"
                 android:layout_toStartOf="@+id/email"
                 android:text="Email"
                 app:layout_constraintEnd_toStartOf="@+id/email" />
@@ -159,17 +161,29 @@
             android:layout_marginTop="20dp">
 
 
-            <Button
-                android:id="@+id/location"
-                android:layout_width="100dp"
+            <TextView
+                android:id="@+id/TextView1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="14dp"
-                android:layout_marginEnd="297dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="293dp"
+                android:layout_marginBottom="29dp"
                 android:ems="10"
-                android:text="Location"
-                android:textSize="12dp"
+                android:text="Address"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp"
+                android:ems="10"
+                android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -181,27 +195,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp">
 
-
-            <ImageButton
-                android:id="@+id/saveProfileBtn"
-                android:layout_width="75dp"
-                android:layout_height="58dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="103dp"
-                android:contentDescription="@string/saveProfile"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:srcCompat="@drawable/ic_baseline_person_add_24" />
-
             <ImageButton
                 android:id="@+id/btnCancel"
                 android:layout_width="75dp"
                 android:layout_height="58dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="104dp"
+                android:layout_marginStart="150dp"
                 android:layout_marginTop="9dp"
                 android:contentDescription="@string/cancelAddContact"
                 app:layout_constraintBottom_toBottomOf="parent"

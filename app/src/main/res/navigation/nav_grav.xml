@@ -15,22 +15,41 @@
         <action
             android:id="@+id/action_homeFragment_to_addFragment22"
             app:destination="@id/addFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
 
     </fragment>
 
     <fragment
-         android:id="@+id/favoritesFragment"
-         android:name="com.example.tasty.fragments.HomeFragment"
-         android:label="fragment_favorites"
-         tools:layout="@layout/fragment_home" />
-     <fragment
-         android:id="@+id/settingsFragment"
-         android:name="com.example.tasty.fragments.ProfileFragment"
-         android:label="fragment_settings"
-         tools:layout="@layout/fragment_profile" />
-    <fragment
         android:id="@+id/addFragment2"
         android:name="com.example.tasty.AddFragment"
         android:label="AddFragment" />
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.tasty.fragments.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.tasty.fragments.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_myProfileFragment3"
+            app:destination="@id/myProfileFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/myProfileFragment3"
+        android:name="com.example.tasty.fragments.MyProfileFragment"
+        android:label="MyProfileFragment" >
+        <action
+            android:id="@+id/action_myProfileFragment3_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <argument
+            android:name="current"
+            app:argType="com.example.tasty.database.Person" />
+    </fragment>
 
 </navigation>
