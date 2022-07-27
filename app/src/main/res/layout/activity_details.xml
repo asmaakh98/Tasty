@@ -179,7 +179,7 @@
                 app:icon="@drawable/ic_edit_white_24dp"
                 app:iconTint="#FFFFFF" />
 
-            <!-- <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+             <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
                  android:id="@+id/deleteBtn"
                  android:layout_width="150dp"
                  android:layout_height="50dp"
@@ -196,7 +196,7 @@
                  android:textSize="18sp"
                  app:elevation="8dp"
                  app:icon="@drawable/ic_baseline_delete_24"
-                 app:iconTint="#FFFFFF" /> -->
+                 app:iconTint="#FFFFFF" />
 
         </RelativeLayout>
 

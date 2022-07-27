@@ -1,6 +1,7 @@
 package com.example.tasty.fragments
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,15 +12,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.RecyclerView
 import androidx.room.Database
+import com.example.tasty.ContactUsActivity
 import com.example.tasty.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.fragment_home.view.*
 import kotlinx.android.synthetic.main.fragment_my_recipes.view.*
 
-/**
- * A simple [Fragment] subclass.
- */
+
 class HomeFragment : Fragment() {
 
     lateinit var recipeRV: RecyclerView
@@ -44,6 +44,15 @@ class HomeFragment : Fragment() {
             val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
             transaction.replace(R.id.fl_wrapper, MyprofileFragment)
             transaction.commit()
+        }
+
+        val btnContact = view.findViewById<Button>(R.id.contact_us_btn)
+        btnContact.setOnClickListener {
+            activity?.let{
+                val intent = Intent (it, ContactUsActivity::class.java)
+                it.startActivity(intent)
+            }
+
         }
         return view
     }

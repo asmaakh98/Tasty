@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/aboutTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textColor="@color/yellow_700"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:layout_below="@+id/aboutTv"
+            android:layout_marginTop="19dp"
+            android:text="@string/aboutUs"
+            android:textColor="#6E4903"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description"
+            android:layout_marginTop="20dp"
+            android:text="To send your opinions and learn more:"
+            android:textSize="25dp" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/facebook_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="71dp"
+            android:layout_marginEnd="132dp"
+            android:backgroundTint="@color/yellow_200"
+            android:elevation="16dp"
+            android:padding="8dp"
+            android:onClick="fbClick"
+            android:text="@string/facebook"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:elevation="8dp"
+            app:icon="@drawable/ic_edit_white_24dp"
+            app:iconTint="#FFFFFF" />
+
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/our_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="178dp"
+            android:layout_marginEnd="127dp"
+            android:backgroundTint="@color/yellow_200"
+            android:elevation="16dp"
+            android:padding="8dp"
+            android:text="@string/location"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:elevation="8dp"
+            app:icon="@drawable/ic_baseline_location_on_24"
+            app:iconTint="#FFFFFF" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/contact_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="276dp"
+            android:layout_marginEnd="118dp"
+            android:onClick="phClick"
+            android:backgroundTint="@color/yellow_200"
+            android:elevation="16dp"
+            android:padding="8dp"
+            android:text="@string/telephone"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:elevation="8dp"
+            app:icon="@drawable/ic_baseline_contact_phone_24"
+            app:iconTint="#FFFFFF" />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -23,6 +23,11 @@
     <string name="saveProfile">Save</string>
     <string name="my_recipes">My Recipes</string>
     <string name="skip">Skip</string>
+    <string name="delete">Delete</string>
+    <string name="aboutUs">Our application includes a set of recipes, but what distinguishes it is that you can add your favorite recipes and when you use it, you will explore its features</string>
+    <string name="facebook">Facebook</string>
+    <string name="telephone">Telephone</string>
+    <string name="location">Location</string>
 
 
     <string-array name="category">
