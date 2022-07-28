@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     app:cardUseCompatPadding="true"
     android:layout_margin="8dp"
+    android:background="#F8E96B"
     app:cardCornerRadius="10dp"
     android:id="@+id/rowLayout">
 
