@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/addFragment2"
-        android:name="com.example.tasty.AddFragment"
+        android:name="com.example.tasty.fragments.AddFragment"
         android:label="AddFragment" />
     <fragment
         android:id="@+id/homeFragment2"

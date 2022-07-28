@@ -3,10 +3,10 @@ package com.example.tasty
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.view.WindowManager
 import android.content.Intent
 import android.widget.Button
+import com.example.tasty.activities.RegistrationActivity
+import com.example.tasty.activities.SignInActivity
 
 
 @SuppressLint("CustomSplashScreen")

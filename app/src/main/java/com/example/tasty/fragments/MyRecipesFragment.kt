@@ -13,8 +13,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.tasty.AddFragment
-import com.example.tasty.MyRecipesAdapter
+import com.example.tasty.adapters.MyRecipesAdapter
 import com.example.tasty.R
 import com.example.tasty.database.RecipeViewModel
 import kotlinx.android.synthetic.main.fragment_my_recipes.view.*

@@ -1,4 +1,4 @@
-package com.example.tasty
+package com.example.tasty.adapters
 
 import android.view.View
 import android.view.ViewGroup

@@ -11,13 +11,10 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import androidx.recyclerview.widget.RecyclerView
-import androidx.room.Database
-import com.example.tasty.ContactUsActivity
+import com.example.tasty.activities.ContactUsActivity
 import com.example.tasty.R
 import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.fragment_home.view.*
-import kotlinx.android.synthetic.main.fragment_my_recipes.view.*
 
 
 class HomeFragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.example.tasty
+package com.example.tasty.adapters
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.example.tasty.R
+import com.example.tasty.activities.DetailsActivity
 
 import com.example.tasty.database.Recipe
 import kotlinx.android.synthetic.main.layout_list_item.view.*

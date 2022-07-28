@@ -1,8 +1,8 @@
-package com.example.tasty
+package com.example.tasty.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.navArgs
+import com.example.tasty.R
 import kotlinx.android.synthetic.main.activity_details.*
 
 class DetailsActivity : AppCompatActivity() {

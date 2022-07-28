@@ -21,7 +21,7 @@
         android:theme="@style/Theme.Tasty">
 
         <activity
-            android:name=".ContactUsActivity"
+            android:name=".activities.ContactUsActivity"
             android:exported="false" />
         <activity
             android:name=".notification.NotificationActivity"
@@ -39,13 +39,13 @@
             android:resource="@color/material_dynamic_primary10" />
 
         <activity
-            android:name=".DetailsActivity"
+            android:name=".activities.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".activities.SignInActivity"
             android:exported="true" />
         <activity
-            android:name=".RegistrationActivity"
+            android:name=".activities.RegistrationActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
